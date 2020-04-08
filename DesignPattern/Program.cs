@@ -2,6 +2,7 @@
 using DesignPattern.BuilderPattern;
 using DesignPattern.DecoratorPatten;
 using DesignPattern.FacadePattern;
+using DesignPattern.FlyweightPattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.SimpleFactoryPattern;
 using System;
@@ -110,7 +111,17 @@ namespace DesignPattern
             }
             //享元模式
             {
-                
+                FlyweightFactory factory = new FlyweightFactory();
+                IFlyweight f01 = factory.GetFlyweight("a");
+                IFlyweight f02 = factory.GetFlyweight("a");
+                IFlyweight f03 = factory.GetFlyweight("a");
+                IFlyweight f11 = factory.GetFlyweight("b");
+                IFlyweight f12 = factory.GetFlyweight("b");
+                f01.Operation(new UnsharableFlyweight("第1次调用a。"));
+                f02.Operation(new UnsharableFlyweight("第2次调用a。"));
+                f03.Operation(new UnsharableFlyweight("第3次调用a。"));
+                f11.Operation(new UnsharableFlyweight("第1次调用b。"));
+                f12.Operation(new UnsharableFlyweight("第2次调用b。"));
             }
             Console.ReadKey();
         }
