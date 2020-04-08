@@ -1,6 +1,7 @@
 ﻿using DesignPattern.AdapterPattern;
 using DesignPattern.BuilderPattern;
 using DesignPattern.DecoratorPatten;
+using DesignPattern.FacadePattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.SimpleFactoryPattern;
 using System;
@@ -84,23 +85,29 @@ namespace DesignPattern
                 //target.Request();
             }
             //装饰者模式
+            {
+                ////买个苹果手机
+                //IPhone phone = new ApplePhone();
 
-            //买个苹果手机
-            IPhone phone = new ApplePhone();
+                //// 现在想贴膜了
+                //Decorator decorator = new Sticker(phone);
+                //decorator.Photo();
 
-            // 现在想贴膜了
-            Decorator decorator = new Sticker(phone);
-            decorator.Photo();
+                ////想挂件
+                //Decorator decorator1 = new Accessories(phone);
+                //decorator1.Photo();
 
-            //想挂件
-            Decorator decorator1 = new Accessories(phone);
-            decorator1.Photo();
+                //// 现在我同时有贴膜和手机挂件了
+                //Decorator sticker = new Sticker(phone);
+                //Decorator applePhoneWithAccessoriesAndSticker = new Accessories(sticker);
+                //applePhoneWithAccessoriesAndSticker.Photo();
 
-            // 现在我同时有贴膜和手机挂件了
-            Decorator sticker = new Sticker(phone);
-            Decorator applePhoneWithAccessoriesAndSticker = new Accessories(sticker);
-            applePhoneWithAccessoriesAndSticker.Photo();
-
+            }
+            //外观者模式
+            {
+                Facade f = new Facade();
+                f.Method();
+            }
             Console.ReadKey();
         }
     }
