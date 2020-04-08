@@ -105,8 +105,12 @@ namespace DesignPattern
             }
             //外观者模式
             {
-                Facade f = new Facade();
-                f.Method();
+                //Facade f = new Facade();
+                //f.Method();
+            }
+            //享元模式
+            {
+                
             }
             Console.ReadKey();
         }
