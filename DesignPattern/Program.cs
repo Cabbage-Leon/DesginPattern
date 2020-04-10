@@ -1,11 +1,13 @@
 ﻿using DesignPattern.AdapterPattern;
 using DesignPattern.BuilderPattern;
+using DesignPattern.CompositePattern;
 using DesignPattern.DecoratorPatten;
 using DesignPattern.FacadePattern;
 using DesignPattern.FlyweightPattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.SimpleFactoryPattern;
 using System;
+using System.ComponentModel;
 
 namespace DesignPattern
 {
@@ -111,18 +113,33 @@ namespace DesignPattern
             }
             //享元模式
             {
-                FlyweightFactory factory = new FlyweightFactory();
-                IFlyweight f01 = factory.GetFlyweight("a");
-                IFlyweight f02 = factory.GetFlyweight("a");
-                IFlyweight f03 = factory.GetFlyweight("a");
-                IFlyweight f11 = factory.GetFlyweight("b");
-                IFlyweight f12 = factory.GetFlyweight("b");
-                f01.Operation(new UnsharableFlyweight("第1次调用a。"));
-                f02.Operation(new UnsharableFlyweight("第2次调用a。"));
-                f03.Operation(new UnsharableFlyweight("第3次调用a。"));
-                f11.Operation(new UnsharableFlyweight("第1次调用b。"));
-                f12.Operation(new UnsharableFlyweight("第2次调用b。"));
+                //FlyweightFactory factory = new FlyweightFactory();
+                //IFlyweight f01 = factory.GetFlyweight("a");
+                //IFlyweight f02 = factory.GetFlyweight("a");
+                //IFlyweight f03 = factory.GetFlyweight("a");
+                //IFlyweight f11 = factory.GetFlyweight("b");
+                //IFlyweight f12 = factory.GetFlyweight("b");
+                //f01.Operation(new UnsharableFlyweight("第1次调用a。"));
+                //f02.Operation(new UnsharableFlyweight("第2次调用a。"));
+                //f03.Operation(new UnsharableFlyweight("第3次调用a。"));
+                //f11.Operation(new UnsharableFlyweight("第1次调用b。"));
+                //f12.Operation(new UnsharableFlyweight("第2次调用b。"));
             }
+            //组合模式
+            {
+                CompositePattern.IComponent c0 = new Composite();
+                CompositePattern.IComponent c1 = new Composite();
+                CompositePattern.IComponent leaf1 = new Leaf("1");
+                CompositePattern.IComponent leaf2 = new Leaf("2");
+                CompositePattern.IComponent leaf3 = new Leaf("3");
+                c0.Add(leaf1);
+                c0.Add(c1);
+                c1.Add(leaf2);
+                c1.Add(leaf3);
+                c0.Operation();
+            }
+
+
             Console.ReadKey();
         }
     }
