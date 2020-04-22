@@ -20,3 +20,15 @@ D:\MyCode\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.AssemblyInfoInputs
 D:\MyCode\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.AssemblyInfo.cs
 D:\MyCode\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.dll
 D:\MyCode\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.pdb
+D:\Code\DesginPattern\DesignPattern\bin\Debug\netcoreapp2.1\DesignPattern.deps.json
+D:\Code\DesginPattern\DesignPattern\bin\Debug\netcoreapp2.1\DesignPattern.runtimeconfig.json
+D:\Code\DesginPattern\DesignPattern\bin\Debug\netcoreapp2.1\DesignPattern.runtimeconfig.dev.json
+D:\Code\DesginPattern\DesignPattern\bin\Debug\netcoreapp2.1\DesignPattern.dll
+D:\Code\DesginPattern\DesignPattern\bin\Debug\netcoreapp2.1\DesignPattern.pdb
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.csprojAssemblyReference.cache
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.csproj.CoreCompileInputs.cache
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.AssemblyInfoInputs.cache
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.AssemblyInfo.cs
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.dll
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.pdb
+D:\Code\DesginPattern\DesignPattern\obj\Debug\netcoreapp2.1\DesignPattern.genruntimeconfig.cache
