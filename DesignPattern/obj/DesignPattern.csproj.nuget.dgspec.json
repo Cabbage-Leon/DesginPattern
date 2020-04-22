@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitCode\\DesignPattern\\DesignPattern\\DesignPattern.csproj": {}
+    "D:\\Code\\DesginPattern\\DesignPattern\\DesignPattern.csproj": {}
   },
   "projects": {
-    "D:\\GitCode\\DesignPattern\\DesignPattern\\DesignPattern.csproj": {
+    "D:\\Code\\DesginPattern\\DesignPattern\\DesignPattern.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitCode\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+        "projectUniqueName": "D:\\Code\\DesginPattern\\DesignPattern\\DesignPattern.csproj",
         "projectName": "DesignPattern",
-        "projectPath": "D:\\GitCode\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+        "projectPath": "D:\\Code\\DesginPattern\\DesignPattern\\DesignPattern.csproj",
         "packagesPath": "C:\\Users\\0789.HS\\.nuget\\packages\\",
-        "outputPath": "D:\\GitCode\\DesignPattern\\DesignPattern\\obj\\",
+        "outputPath": "D:\\Code\\DesginPattern\\DesignPattern\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

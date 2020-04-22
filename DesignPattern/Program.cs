@@ -16,6 +16,7 @@ namespace DesignPattern
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
+            //创建型
             //单例
             {
                 //HungrySingleton hungrySingleton = HungrySingleton.GetInstance();
@@ -57,6 +58,7 @@ namespace DesignPattern
                 //bulider.GetComplexHouse();
             }
             //简单工厂
+            //结构型
             {
                 //SimpleFactory.GetInstance();
             }
@@ -138,6 +140,7 @@ namespace DesignPattern
                 c1.Add(leaf3);
                 c0.Operation();
             }
+            //行为行
 
 
             Console.ReadKey();
