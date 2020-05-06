@@ -6,6 +6,7 @@ using DesignPattern.DecoratorPatten;
 using DesignPattern.FacadePattern;
 using DesignPattern.FlyweightPattern;
 using DesignPattern.ProxyPattern;
+using DesignPattern.ResponsibilityPattern;
 using DesignPattern.SimpleFactoryPattern;
 using DesignPattern.StrategyPattern;
 using DesignPattern.TemplateMethod;
@@ -162,7 +163,13 @@ namespace DesignPattern
                 //Invoker invoker = new Invoker(command);
                 //invoker.Call();
             }
-
+            //责任链模式
+            {
+                //Handler handler1 = new ConcreteHandler();
+                //Handler handler2 = new ConcreteHandler2();
+                //handler1.SetNext(handler2);
+                //handler1.HandleRequest("two");
+            }
 
             Console.ReadKey();
         }
