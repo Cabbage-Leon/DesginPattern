@@ -1,5 +1,6 @@
 ﻿using DesignPattern.AdapterPattern;
 using DesignPattern.BuilderPattern;
+using DesignPattern.CommandPattern;
 using DesignPattern.CompositePattern;
 using DesignPattern.DecoratorPatten;
 using DesignPattern.FacadePattern;
@@ -149,9 +150,18 @@ namespace DesignPattern
                 //absClass.TemplateMethod();
             }
             //策略模式
-            ConcreteStrategyA concreteStrategyA = new ConcreteStrategyA();
-            Context context = new Context(concreteStrategyA);
-            context.StrategyMethod();
+            {
+                //ConcreteStrategyA concreteStrategyA = new ConcreteStrategyA();
+                //Context context = new Context(concreteStrategyA);
+                //context.StrategyMethod();
+            }
+            //命令模式
+            {
+                //调用和实现解耦
+                //ConcreteCommand command = new ConcreteCommand();
+                //Invoker invoker = new Invoker(command);
+                //invoker.Call();
+            }
 
 
             Console.ReadKey();
