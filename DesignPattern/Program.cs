@@ -6,6 +6,7 @@ using DesignPattern.FacadePattern;
 using DesignPattern.FlyweightPattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.SimpleFactoryPattern;
+using DesignPattern.StrategyPattern;
 using DesignPattern.TemplateMethod;
 using System;
 using System.ComponentModel;
@@ -147,7 +148,10 @@ namespace DesignPattern
                 //AbsClass absClass = new ConcreteClass();
                 //absClass.TemplateMethod();
             }
-
+            //策略模式
+            ConcreteStrategyA concreteStrategyA = new ConcreteStrategyA();
+            Context context = new Context(concreteStrategyA);
+            context.StrategyMethod();
 
 
             Console.ReadKey();
