@@ -6,6 +6,7 @@ using DesignPattern.FacadePattern;
 using DesignPattern.FlyweightPattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.SimpleFactoryPattern;
+using DesignPattern.TemplateMethod;
 using System;
 using System.ComponentModel;
 
@@ -129,18 +130,24 @@ namespace DesignPattern
             }
             //组合模式
             {
-                CompositePattern.IComponent c0 = new Composite();
-                CompositePattern.IComponent c1 = new Composite();
-                CompositePattern.IComponent leaf1 = new Leaf("1");
-                CompositePattern.IComponent leaf2 = new Leaf("2");
-                CompositePattern.IComponent leaf3 = new Leaf("3");
-                c0.Add(leaf1);
-                c0.Add(c1);
-                c1.Add(leaf2);
-                c1.Add(leaf3);
-                c0.Operation();
+                //CompositePattern.IComponent c0 = new Composite();
+                //CompositePattern.IComponent c1 = new Composite();
+                //CompositePattern.IComponent leaf1 = new Leaf("1");
+                //CompositePattern.IComponent leaf2 = new Leaf("2");
+                //CompositePattern.IComponent leaf3 = new Leaf("3");
+                //c0.Add(leaf1);
+                //c0.Add(c1);
+                //c1.Add(leaf2);
+                //c1.Add(leaf3);
+                //c0.Operation();
             }
-            //行为行
+            //行为型
+            //模板方法
+            {
+                //AbsClass absClass = new ConcreteClass();
+                //absClass.TemplateMethod();
+            }
+
 
 
             Console.ReadKey();
