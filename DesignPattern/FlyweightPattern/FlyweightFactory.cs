@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace DesignPattern.FlyweightPattern
 {
     //享元工厂（Flyweight Factory）角色：负责创建和管理享元角色。当客户对象请求一个享元对象时，享元工厂检査系统中是否存在符合要求的享元对象，如果存在则提供给客户；如果不存在的话，则创建一个新的享元对象。
-
+    //本质就是维护一个字典，维护的对象可以简单可以复杂，这里就是复杂了，方法又依赖的第三个类UnsharableFlyweight
     public class FlyweightFactory
     {
         private readonly Dictionary<string, IFlyweight> KeyValuePairs = new Dictionary<string, IFlyweight>();

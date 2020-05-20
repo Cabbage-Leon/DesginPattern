@@ -9,6 +9,7 @@ namespace DesignPattern.CommandPattern
     /// </summary>
     public class Invoker
     {
+        //调用者代理命令-命令代理接受者-接受者具体实现
         private ICommand Command;
 
         public Invoker(ICommand command)

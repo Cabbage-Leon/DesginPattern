@@ -9,6 +9,7 @@ namespace DesignPattern.CommandPattern
     /// </summary>
     public class ConcreteCommand : ICommand
     {
+        //代理这个类
         private Receiver Receiver;
 
         public ConcreteCommand()
@@ -16,6 +17,12 @@ namespace DesignPattern.CommandPattern
             this.Receiver = new Receiver();
         }
 
+        public ConcreteCommand(Receiver receiver)
+        {
+            this.Receiver = receiver;
+        }
+
+        //这种情况又有点像适配器了
         public void Execute()
         {
             Receiver.Action();

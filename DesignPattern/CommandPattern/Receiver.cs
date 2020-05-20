@@ -9,6 +9,7 @@ namespace DesignPattern.CommandPattern
     /// </summary>
     public class Receiver
     {
+        //关注的是实现
         public void Action()
         {
             Console.WriteLine("接收者的action()方法被调用...");

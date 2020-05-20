@@ -9,7 +9,7 @@ namespace DesignPattern.DecoratorPatten
         public string Name { get; set; } = "苹果手机";
         public void Photo()
         {
-            Console.WriteLine(this.Name+"拍照");
+            Console.WriteLine(this.Name + "拍照");
         }
 
     }

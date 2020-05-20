@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPattern.DecoratorPatten
 {
-    public class Accessories :Decorator
+    public class Accessories : Decorator
     {
         public Accessories(IPhone phone) : base(phone)
         {

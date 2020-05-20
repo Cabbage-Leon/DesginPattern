@@ -25,6 +25,6 @@ namespace DesignPattern.CompositePattern
             Console.WriteLine("树叶" + Name + "：被访问！");
         }
 
-       
+
     }
 }

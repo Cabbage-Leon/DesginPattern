@@ -3,7 +3,7 @@
 namespace DesignPattern.FlyweightPattern
 {
     //具体享元（Concrete Flyweight）角色：实现抽象享元角色中所规定的接口。
-    public class ConcreteFlyweight :IFlyweight
+    public class ConcreteFlyweight : IFlyweight
     {
         private readonly string Key;
         public ConcreteFlyweight(string key)

@@ -95,20 +95,22 @@ namespace DesignPattern
             }
             //装饰者模式
             {
+
+                ////具体Decorator => Decorator => IPhone  里式替换原则
                 ////买个苹果手机
-                //IPhone phone = new ApplePhone();
+                IPhone phone = new ApplePhone();
 
                 //// 现在想贴膜了
-                //Decorator decorator = new Sticker(phone);
+                //IPhone decorator = new Sticker(phone);
                 //decorator.Photo();
 
                 ////想挂件
-                //Decorator decorator1 = new Accessories(phone);
+                //IPhone decorator1 = new Accessories(phone);
                 //decorator1.Photo();
 
                 //// 现在我同时有贴膜和手机挂件了
-                //Decorator sticker = new Sticker(phone);
-                //Decorator applePhoneWithAccessoriesAndSticker = new Accessories(sticker);
+                //IPhone sticker = new Sticker(phone);
+                //IPhone applePhoneWithAccessoriesAndSticker = new Accessories(sticker);
                 //applePhoneWithAccessoriesAndSticker.Photo();
 
             }
@@ -133,6 +135,7 @@ namespace DesignPattern
             }
             //组合模式
             {
+                ////叶子内部不维护集合，枝干内部维护一个集合
                 //CompositePattern.IComponent c0 = new Composite();
                 //CompositePattern.IComponent c1 = new Composite();
                 //CompositePattern.IComponent leaf1 = new Leaf("1");
@@ -144,9 +147,10 @@ namespace DesignPattern
                 //c1.Add(leaf3);
                 //c0.Operation();
             }
-            //行为型
+            //行为型-子类，实现类更多的关注的是行为方法的实现
             //模板方法
             {
+                //抽象类构建了架子，实现类填充具体的
                 //AbsClass absClass = new ConcreteClass();
                 //absClass.TemplateMethod();
             }
@@ -155,10 +159,18 @@ namespace DesignPattern
                 //ConcreteStrategyA concreteStrategyA = new ConcreteStrategyA();
                 //Context context = new Context(concreteStrategyA);
                 //context.StrategyMethod();
+                //context.StrategyMethod(new ConcreteStrategyB());
             }
             //命令模式
             {
-                //调用和实现解耦
+                ////调用和实现解耦
+                ////外部传入receiver
+                //Receiver receiverA = new Receiver();
+                //ConcreteCommand commandA = new ConcreteCommand(receiverA);
+                //Invoker invokerA = new Invoker(commandA);
+                //invokerA.Call();
+
+                ////内部实现receiver
                 //ConcreteCommand command = new ConcreteCommand();
                 //Invoker invoker = new Invoker(command);
                 //invoker.Call();
@@ -170,7 +182,10 @@ namespace DesignPattern
                 //handler1.SetNext(handler2);
                 //handler1.HandleRequest("two");
             }
-
+            //状态模式
+            {
+                
+            }
             Console.ReadKey();
         }
     }

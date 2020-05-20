@@ -16,11 +16,7 @@ namespace DesignPattern.DecoratorPatten
         //这里是抽象类中 代理了手机， 可以扩展了手机的功能
         public virtual void Photo()
         {
-            Console.Write("我给拍照前加功能");
-
             Phone.Photo();
-
-            Console.Write("我给拍照后加功能");
         }
     }
 }
