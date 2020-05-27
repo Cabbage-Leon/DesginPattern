@@ -5,6 +5,7 @@ using DesignPattern.CompositePattern;
 using DesignPattern.DecoratorPatten;
 using DesignPattern.FacadePattern;
 using DesignPattern.FlyweightPattern;
+using DesignPattern.ObserverPattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.ResponsibilityPattern;
 using DesignPattern.SimpleFactoryPattern;
@@ -99,7 +100,7 @@ namespace DesignPattern
 
                 ////具体Decorator => Decorator => IPhone  里式替换原则
                 ////买个苹果手机
-                IPhone phone = new ApplePhone();
+                //IPhone phone = new ApplePhone();
 
                 //// 现在想贴膜了
                 //IPhone decorator = new Sticker(phone);
@@ -205,6 +206,14 @@ namespace DesignPattern
                 //scoreContext.Add(13);
                 //scoreContext.Add(10);
 
+            }
+            //观察者模式
+            {
+                ////一个动作，所有的观察者都做出了反应
+                //Rate rate = new RMBrate();
+                //rate.Add(new ExportCompany());
+                //rate.Add(new ImportCompany());
+                //rate.Change(10);
             }
             Console.ReadKey();
         }
