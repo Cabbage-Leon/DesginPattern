@@ -8,6 +8,7 @@ using DesignPattern.FlyweightPattern;
 using DesignPattern.ProxyPattern;
 using DesignPattern.ResponsibilityPattern;
 using DesignPattern.SimpleFactoryPattern;
+using DesignPattern.StatePattern;
 using DesignPattern.StrategyPattern;
 using DesignPattern.TemplateMethod;
 using System;
@@ -163,7 +164,7 @@ namespace DesignPattern
             }
             //命令模式
             {
-                ////调用和实现解耦
+                ////调用和实现解耦，总共包2层，A包B，B包了C， A的方法C具体实现，B处在中间
                 ////外部传入receiver
                 //Receiver receiverA = new Receiver();
                 //ConcreteCommand commandA = new ConcreteCommand(receiverA);
@@ -177,6 +178,7 @@ namespace DesignPattern
             }
             //责任链模式
             {
+                //类似模板方法 Handler实现了架构和公共方法实现。 具体Handler只关注他具体的行为,包一层包的是自己的抽象
                 //Handler handler1 = new ConcreteHandler();
                 //Handler handler2 = new ConcreteHandler2();
                 //handler1.SetNext(handler2);
@@ -184,7 +186,25 @@ namespace DesignPattern
             }
             //状态模式
             {
-                
+                ////状态模式的关键点：互相包含对方
+
+                ////第一种构造方式，外部初始化
+                ////ScoreContext scoreContext = new ScoreContext();
+                ////State state = new ConcreteStateA(scoreContext);
+                ////scoreContext.State = state;
+
+                ////ScoreContext内部初始化
+                //ScoreContext scoreContext = new ScoreContext();
+                ////上下文进行变化， 内部实现了状态改变！外部完全看不见
+                ////状态的改变，内部已经固定化，路线已经预先规划好 比如优秀-良好-不及格  也可以闭环
+                ////一个状态处理完之后如果状态变化需要变更context中的state！
+                //scoreContext.Add(10);
+                //scoreContext.Add(15);
+                //scoreContext.Add(20);
+                //scoreContext.Add(30);
+                //scoreContext.Add(13);
+                //scoreContext.Add(10);
+
             }
             Console.ReadKey();
         }
