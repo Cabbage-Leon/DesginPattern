@@ -1,4 +1,5 @@
-﻿using DesignPattern.AdapterPattern;
+﻿using System;
+using DesignPattern.AdapterPattern;
 using DesignPattern.BuilderPattern;
 using DesignPattern.CommandPattern;
 using DesignPattern.CompositePattern;
@@ -12,8 +13,8 @@ using DesignPattern.SimpleFactoryPattern;
 using DesignPattern.StatePattern;
 using DesignPattern.StrategyPattern;
 using DesignPattern.TemplateMethod;
-using System;
 using System.ComponentModel;
+using DesignPattern.MediatorPattern;
 
 namespace DesignPattern
 {
@@ -215,6 +216,19 @@ namespace DesignPattern
                 //rate.Add(new ImportCompany());
                 //rate.Change(10);
             }
+            //中介者模式
+            {
+                ////中介 和 客户之间互相拥有对方
+                //Colleague colleague1 = new ConcreteColleague(1);
+                //Colleague colleague2 = new ConcreteColleague(2);
+                //Colleague colleague3 = new ConcreteColleague(3);
+                //Mediator mediator = new ConcreteMediator();
+                //mediator.Register(colleague1);
+                //mediator.Register(colleague2);
+                //mediator.Register(colleague3);
+                //colleague1.Send("2就是个弟弟");
+            }
+
             Console.ReadKey();
         }
     }
