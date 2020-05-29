@@ -15,6 +15,7 @@ using DesignPattern.StrategyPattern;
 using DesignPattern.TemplateMethod;
 using System.ComponentModel;
 using DesignPattern.MediatorPattern;
+using DesignPattern.IteratorPattern;
 
 namespace DesignPattern
 {
@@ -180,7 +181,10 @@ namespace DesignPattern
             }
             //责任链模式
             {
+                //和自己人玩
                 //类似模板方法 Handler实现了架构和公共方法实现。 具体Handler只关注他具体的行为,包一层包的是自己的抽象
+                //这个链模式是一种接龙上层指定，A-》B-》C 一直下去 ，状态模式更加灵活可以仍以顺序，内部指定
+                //责任链没有上下文和自己玩。 状态模式有上下文，都和上下文玩。
                 //Handler handler1 = new ConcreteHandler();
                 //Handler handler2 = new ConcreteHandler2();
                 //handler1.SetNext(handler2);
@@ -188,8 +192,8 @@ namespace DesignPattern
             }
             //状态模式
             {
+                ////都和上下文玩
                 ////状态模式的关键点：互相包含对方
-
                 ////第一种构造方式，外部初始化
                 ////ScoreContext scoreContext = new ScoreContext();
                 ////State state = new ConcreteStateA(scoreContext);
@@ -210,6 +214,7 @@ namespace DesignPattern
             }
             //观察者模式
             {
+                ////被观察着 带着观察者玩
                 ////一个动作，所有的观察者都做出了反应
                 //Rate rate = new RMBrate();
                 //rate.Add(new ExportCompany());
@@ -218,6 +223,7 @@ namespace DesignPattern
             }
             //中介者模式
             {
+                //// 中介和客户互相玩
                 ////中介 和 客户之间互相拥有对方
                 //Colleague colleague1 = new ConcreteColleague(1);
                 //Colleague colleague2 = new ConcreteColleague(2);
@@ -227,6 +233,27 @@ namespace DesignPattern
                 //mediator.Register(colleague2);
                 //mediator.Register(colleague3);
                 //colleague1.Send("2就是个弟弟");
+            }
+            //迭代器模式
+            {
+                ////内部集合是什么样子没有暴露出来，完全不知道里面是啥
+                ////内部维护了一个集合
+                //IAggregate<string> aggregate = new ConcreteAggregate<string>();
+                //aggregate.Add("1");
+                //aggregate.Add("2");
+                //aggregate.Add("3");
+                //aggregate.Add("4");
+                //aggregate.Add("5");
+                ////把内部集合传给了迭代器
+                //ITerator<string> terator =  aggregate.GetIterator();
+                //while (terator.HasNext())
+                //{
+                //    string ob = terator.Next();
+                //    Console.WriteLine(ob);
+                    
+                //}
+                //string  first = terator.First();
+                //Console.WriteLine(first);
             }
 
             Console.ReadKey();
