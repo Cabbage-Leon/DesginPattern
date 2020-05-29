@@ -16,6 +16,7 @@ using DesignPattern.TemplateMethod;
 using System.ComponentModel;
 using DesignPattern.MediatorPattern;
 using DesignPattern.IteratorPattern;
+using DesignPattern.VisitorPattern;
 
 namespace DesignPattern
 {
@@ -255,7 +256,26 @@ namespace DesignPattern
                 //string  first = terator.First();
                 //Console.WriteLine(first);
             }
-
+            //访问者模式
+            {
+                //Structure structure = new Structure();
+                //ConcreteElement elementA = new ConcreteElement();
+                //ConcreteElementB elementB = new ConcreteElementB();
+                //Visitor visitorA = new ConcreteVisitor();
+                //Visitor visitorB = new ConcreteVisitorB();
+                //structure.Add(elementA);
+                //structure.Add(elementB);
+                ////访问者主动访问
+                //visitorA.Visit(elementA);
+                //visitorB.Visit(elementB);
+                //Console.WriteLine("=================");
+                ////主动接受访问
+                //elementA.Accept(visitorB);
+                //elementB.Accept(visitorA);
+                //Console.WriteLine("=================");
+                ////架构访问 访问者逐个访问
+                //structure.Accept(visitorA);
+            }
             Console.ReadKey();
         }
     }
